@@ -62,5 +62,9 @@ contract WETH {
 
         return true;
     }
+
+    function mint(address _to, uint256 _amount) external {
+        balanceOf[_to] += _amount;
+    }
 }
 
