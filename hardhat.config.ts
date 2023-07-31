@@ -58,7 +58,11 @@ const config: HardhatUserConfig = {
         enabled: false,
         url: "https://goerli-rollup.arbitrum.io/rpc",
         blockNumber: 10278328
-      }
+      },
+    },
+    local: {
+      chainId: 1,
+      url: "http://127.0.0.1:8545/"
     },
     eth: {
       chainId: 1,

@@ -1,8 +1,7 @@
 import { HardhatRuntimeEnvironment } from "hardhat/types";
 import { DeployFunction } from "hardhat-deploy/dist/types";
 import { ethers, parseEther } from "ethers";
-
-const now = () => Math.floor(Date.now() / 1000);
+import { now } from "../scripts/common";
 
 const func: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
   const deployer = await hre.ethers.getNamedSigner('deployer')
